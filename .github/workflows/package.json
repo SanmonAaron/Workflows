@@ -2,7 +2,7 @@
   "name": "workflows",
   "version": "1.0.0",
   "description": "",
-  "main": "sum.js",
+  "main": "test.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
