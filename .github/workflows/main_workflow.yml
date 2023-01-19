@@ -11,10 +11,10 @@ jobs:
         - name: Checkout code
           uses: actions/checkout@v2
         - name: Linter execution
-          uses: github/super-linter@v3
+          uses: github/super-linter@v3.17.0
           env:
             DEFAULT_BRANCH: nodejs_linter_job
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            LINTER_RULES_PATH: /.github/linters
+            LINTER_RULES_PATH: .github/linters
             JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
             VALIDATE_JAVASCRIPT_ES: true
