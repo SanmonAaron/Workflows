@@ -2,9 +2,9 @@
   "name": "workflows",
   "version": "1.0.0",
   "description": "",
-  "main": "test.js",
+  "main": "sum.test.js",
   "scripts": {
-    "test": "jest sum.test.js"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC"
