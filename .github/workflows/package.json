@@ -4,8 +4,11 @@
   "description": "",
   "main": "sum.test.js",
   "scripts": {
-    "test": "jest"
+    "test": "node_modules/.bin/jest"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.3.1"
+  }
 }
