@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "sum.test.js",
+  "dependencies": {
+    "node": "^19.3.0"
+  },
   "scripts": {
-    "test": "node_modules/.bin/jest"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC"
