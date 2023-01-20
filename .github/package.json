@@ -1,5 +1,8 @@
 {
   "scripts": {
     "test": "jest"
+  },
+  "dependencies": {
+    "node": "^19.4.0"
   }
 }
