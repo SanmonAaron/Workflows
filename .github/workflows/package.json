@@ -1,14 +1,8 @@
 {
-  "name": "workflows",
-  "version": "1.0.0",
-  "description": "",
-  "main": "sum.test.js",
   "dependencies": {
     "node": "^19.3.0"
   },
   "scripts": {
     "test": "jest"
-  },
-  "author": "",
-  "license": "ISC"
+  }
 }
