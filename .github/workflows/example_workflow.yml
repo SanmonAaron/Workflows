@@ -19,7 +19,7 @@ jobs:
           if: ${{ failure() && steps.diff.conclusion == 'failure' }}
           with:
             name: index.js
-            path: src/index.js
+            path: my-app/src/index.js
   job2:
       name: Deploy jobs
       runs-on: ubuntu-latest
