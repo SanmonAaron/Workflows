@@ -16,6 +16,9 @@ jobs:
             npm run build
         - name: Artefactos generados
           uses: actions/upload-artifact@v2
+          with:
+            name: index.js
+            path: ./my-react-app/src/index.js
   job2:
       name: Deploy jobs
       runs-on: ubuntu-latest
