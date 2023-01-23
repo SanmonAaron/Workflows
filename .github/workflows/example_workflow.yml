@@ -10,9 +10,6 @@ jobs:
       steps:
         - name: Checkout code
           uses: actions/checkout@v2
-        - name: Crear estáticos
-          run: |
-            npm run build
         - name: Artefactos generados
           uses: actions/upload-artifact@v2
           if: ${{ failure() && steps.diff.conclusion == 'failure' }}
