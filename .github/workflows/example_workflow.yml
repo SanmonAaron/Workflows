@@ -1,0 +1,31 @@
+name: example_workflow
+on:
+  push:
+    branches:
+      - react_app_deploy
+jobs:
+  job1:
+      name: Build con 3 steps
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v2
+        - name: Crear estáticos
+          run: |
+            npm install
+            npm run build
+        - name: Artefactos generados
+          uses: actions/upload-artifact@v2
+  job2:
+      name: Deploy jobs
+      runs-on: ubuntu-latest
+      steps:
+        - name: Descargar artefactos
+          uses: actions/download-artifact@v2
+        - name: Desplegar artefactos en surge
+          uses: dswistowski/surge-sh-action@v1
+          with:
+            domain: 'foo-bar.surge.sh'
+            project: '.'
+            login: ${{ secrets.surge_login }}
+            token: ${{ secrets.surge_token }}
