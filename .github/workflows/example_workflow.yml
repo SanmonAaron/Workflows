@@ -14,8 +14,6 @@ jobs:
           run: |
             npm install
             npm run build
-          with:
-            path: ./my-react-app/package.json
         - name: Artefactos generados
           uses: actions/upload-artifact@v2
           with:
